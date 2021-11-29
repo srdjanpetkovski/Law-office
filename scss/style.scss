@@ -48,6 +48,27 @@ mixins
     align-items: $align;
     flex-direction: $direction;
 }
+@mixin btn {
+    font-size: 1rem;
+    background: transparent;
+    color: $white;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 10px 40px;
+    border: 2px solid $white;
+    margin-top: 30px;
+    text-transform: uppercase;
+    transition: $transition;
+    &:hover {
+        background: $white;
+        color: $primary;
+    }
+}
+@mixin bgImg($height) {
+    background-position: center;
+    background-size: cover;
+    height: $height;
+}
 
 /***************
 top bar
@@ -84,6 +105,45 @@ top bar
                 background: $secondary;
                 box-shadow: 0 0 10px #a0a0a0;
             }
+        }
+    }
+}
+
+/***************
+main Header
+**************/
+.mainHeader {
+    background-image: linear-gradient(rgba(49, 119, 181, 0.7), rgba(49, 119, 181, 0.7)), url(../img/header.jpg);
+    @include bgImg(80vh);
+    color: $white;
+    padding-top: 20px;
+    ul {
+        @include flex(flex-end, center, row);
+        a {
+            color: $white;
+            font-size: 1.3rem;
+            margin-left: 40px;
+        }
+    }
+    hgroup{
+        @include flex(center, center, 
+        column);
+        height: 80vh;
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        h1 {
+            font-size: 4rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+        button {
+            @include btn;
         }
     }
 }

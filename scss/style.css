@@ -106,4 +106,94 @@ top bar
   -webkit-box-shadow: 0 0 10px #a0a0a0;
           box-shadow: 0 0 10px #a0a0a0;
 }
+
+/***************
+main Header
+**************/
+.mainHeader {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 119, 181, 0.7)), to(rgba(49, 119, 181, 0.7))), url(../img/header.jpg);
+  background-image: linear-gradient(rgba(49, 119, 181, 0.7), rgba(49, 119, 181, 0.7)), url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.mainHeader ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.mainHeader ul a {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-left: 40px;
+}
+
+.mainHeader hgroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.mainHeader hgroup h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.mainHeader hgroup p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.mainHeader hgroup button {
+  font-size: 1rem;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 10px 40px;
+  border: 2px solid #fff;
+  margin-top: 30px;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.mainHeader hgroup button:hover {
+  background: #fff;
+  color: #3177b5;
+}
 /*# sourceMappingURL=style.css.map */
