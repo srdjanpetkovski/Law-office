@@ -70,6 +70,15 @@ mixins
     height: $height;
 }
 
+@mixin underline($color, $width) {
+    background: $color;
+    display: block;
+    width: $width;
+    height: 3px;
+    content: "";
+    margin: 0 0 20px;
+}
+
 /***************
 top bar
 **************/
@@ -114,7 +123,7 @@ main Header
 **************/
 .mainHeader {
     background-image: linear-gradient(rgba(49, 119, 181, 0.7), rgba(49, 119, 181, 0.7)), url(../img/header.jpg);
-    @include bgImg(80vh);
+    @include bgImg(90vh);
     color: $white;
     padding-top: 20px;
     ul {
@@ -128,7 +137,7 @@ main Header
     hgroup{
         @include flex(center, center, 
         column);
-        height: 80vh;
+        height: 75vh;
         margin: auto;
         width: 50%;
         text-align: center;
@@ -145,5 +154,45 @@ main Header
         button {
             @include btn;
         }
+    }
+}
+
+/***************
+contact
+**************/
+.contact {
+    @include flex(space-between, center);
+    padding: $padding;
+    color: $primary;
+    article {
+        flex: 1;
+        h3 {
+            font-size: 2rem;
+            &::after {
+                @include underline($primary, 50px);
+            }
+        }
+    }
+}
+
+/***************
+map
+**************/
+.map {
+    iframe {
+        display: block;
+    }
+}
+
+/***************
+footer
+**************/
+footer {
+    background: $primary;
+    text-align: center;
+    color: $white;
+    padding: 20px;
+    a {
+        color: $white;
     }
 }
