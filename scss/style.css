@@ -266,6 +266,104 @@ services
 }
 
 /***************
+team
+**************/
+.team {
+  background: #eaeaea;
+  text-align: center;
+}
+
+.team .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.team .container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  color: #fff;
+  margin-top: -100px;
+}
+
+.team .container article img {
+  width: 100%;
+}
+
+.team .container article h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.team .container article p {
+  padding: 25px;
+}
+
+.team .container article:nth-child(odd) {
+  background: #3177b5;
+}
+
+.team .container article:nth-child(odd) button {
+  font-size: 0.6rem;
+  background: #33a5d7;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 10px;
+  border: none;
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 80%;
+}
+
+.team .container article:nth-child(odd) button:hover {
+  background: #fff;
+  color: #3177b5;
+}
+
+.team .container article:nth-child(even) {
+  background: #33a5d7;
+}
+
+.team .container article:nth-child(even) button {
+  font-size: 0.6rem;
+  background: #3177b5;
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 10px;
+  border: none;
+  display: block;
+  margin: 20px auto;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  width: 80%;
+}
+
+.team .container article:nth-child(even) button:hover {
+  background: #fff;
+  color: #3177b5;
+}
+
+/***************
 contact
 **************/
 .contact {
