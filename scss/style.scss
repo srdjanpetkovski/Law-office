@@ -218,6 +218,7 @@ team
             flex: 0 0 25%;
             color: $white;
             margin-top: -100px;
+            margin-bottom: 50px;
             img {
                 width: 100%;
             }
@@ -227,7 +228,7 @@ team
                 margin-top: 20px;
             }
             p {
-                padding: 25px;
+                padding: 30px;
             }
         }
         article:nth-child(odd) {
@@ -243,6 +244,134 @@ team
             }
         }
     }
+}
+
+/***************
+cases
+**************/
+.cases {
+    background: $primary;
+    padding: $padding;
+    text-align: center;
+    h2 {
+        color: $white;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+    p{
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .container {
+        @include flex(space-between, center);
+        margin-top: 30px;
+        article {
+            flex: 0 0 23%;
+            background: $white;
+            margin-bottom: 20px;
+            padding: 20px;
+            h3 {
+                color: $primary;
+                font-size: 1.2rem;
+                &::after {
+                    @include underline($primary, 40px);
+                    margin: 10px auto;
+                }
+            }
+            p {
+                font-weight: 400;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+/***************
+blog
+**************/
+.blog {
+    padding: $padding;
+    background: $gray;
+    .container {
+        article {
+            @include flex(flex-start, center);
+            position: relative;
+            div:first-child {
+                flex: 0 0 30%;
+                img {
+                    width: 100%;
+                }
+            }
+            div:last-child {
+                flex: 0 0 40%;
+                margin-left: 20px;
+                h4 {
+                    background: $primary;
+                    color: $white;
+                    padding: 7px;
+                    font-size: 0.9rem;
+                    margin-bottom: 5px;
+                }
+                p {
+                    font-size: 0.8rem;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        aside {
+            position: absolute;
+            top: 820px;
+            right: 150px;
+            background: $primary;
+            width: 20%;
+            padding: 20px;
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+/***************
+consultation
+**************/
+.consultation {
+    background: $gray;
+    @include flex(space-between, center);
+        article {
+            flex: 0 0 50%;
+            background-image: linear-gradient(rgba(49, 119, 181, 0.3), rgba(49, 119, 181, 0.3)), url(../img/about2.jpg);
+            @include bgImg(45vh);
+            @include flex(center, center, column);
+            h3 {
+                color: $white;
+                font-size: 2.2rem;
+                border: 2px solid $white;
+                padding: 40px;
+            }
+        }
+        form {
+            flex: 0 0 40%;
+            @include flex(space-between, center);
+            div {
+                flex: 0 0 60%;
+                input:nth(1) {
+                    flex: 0 0 48%;
+                }
+                input:nth(2) {
+                    flex: 0 0 48%;
+                }
+                input:nth(3) {
+                    display: block;
+                }
+                textarea {
+                    flex: 0 0 100%;
+                }
+                button {
+                    display: block;
+                }
+            }
+        }
 }
 
 /***************

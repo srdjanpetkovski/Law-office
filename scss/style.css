@@ -297,6 +297,7 @@ team
           flex: 0 0 25%;
   color: #fff;
   margin-top: -100px;
+  margin-bottom: 50px;
 }
 
 .team .container article img {
@@ -310,7 +311,7 @@ team
 }
 
 .team .container article p {
-  padding: 25px;
+  padding: 30px;
 }
 
 .team .container article:nth-child(odd) {
@@ -361,6 +362,252 @@ team
 .team .container article:nth-child(even) button:hover {
   background: #fff;
   color: #3177b5;
+}
+
+/***************
+cases
+**************/
+.cases {
+  background: #3177b5;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cases h2 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.cases p {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cases .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 30px;
+}
+
+.cases .container article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.cases .container article h3 {
+  color: #3177b5;
+  font-size: 1.2rem;
+}
+
+.cases .container article h3::after {
+  background: #3177b5;
+  display: block;
+  width: 40px;
+  height: 3px;
+  content: "";
+  margin: 0 0 20px;
+  margin: 10px auto;
+}
+
+.cases .container article p {
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/***************
+blog
+**************/
+.blog {
+  padding: 100px 0;
+  background: #eaeaea;
+}
+
+.blog .container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+.blog .container article div:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.blog .container article div:first-child img {
+  width: 100%;
+}
+
+.blog .container article div:last-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  margin-left: 20px;
+}
+
+.blog .container article div:last-child h4 {
+  background: #3177b5;
+  color: #fff;
+  padding: 7px;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.blog .container article div:last-child p {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.blog .container aside {
+  position: absolute;
+  top: 820px;
+  right: 150px;
+  background: #3177b5;
+  width: 20%;
+  padding: 20px;
+}
+
+.blog .container aside a {
+  color: #fff;
+}
+
+/***************
+consultation
+**************/
+.consultation {
+  background: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.consultation article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(49, 119, 181, 0.3)), to(rgba(49, 119, 181, 0.3))), url(../img/about2.jpg);
+  background-image: linear-gradient(rgba(49, 119, 181, 0.3), rgba(49, 119, 181, 0.3)), url(../img/about2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 45vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.consultation article h3 {
+  color: #fff;
+  font-size: 2.2rem;
+  border: 2px solid #fff;
+  padding: 40px;
+}
+
+.consultation form {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.consultation form div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.consultation form div input:nth(1) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.consultation form div input:nth(2) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+.consultation form div input:nth(3) {
+  display: block;
+}
+
+.consultation form div textarea {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.consultation form div button {
+  display: block;
 }
 
 /***************
