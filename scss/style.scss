@@ -402,12 +402,13 @@ consultation
 **************/
 .consultation {
     background: $gray;
-    @include flex(space-between, center);
+    @include flex(center, center);
     article:first-child {
         flex: 0 0 50%;
+        padding-left: 10%;
         background-image: linear-gradient(rgba(49, 119, 181, 0.3), rgba(49, 119, 181, 0.3)), url(../img/about2.jpg);
-        @include bgImg(45vh);
-        @include flex(center, center, column);
+        @include bgImg(60vh);
+        @include flex(flex-start, center);
         h3 {
             color: $white;
             font-size: 2.2rem;
@@ -417,6 +418,37 @@ consultation
     }
     article:last-child {
         flex: 0 0 50%;
+        padding-right: 10%;
+        @include flex(flex-end, center);
+        form {
+            width: 75%;
+            @include flex(space-between, center);
+            input {
+                border: 2px solid $primary;
+                padding: 10px;
+                font-size: 1rem;
+                margin-bottom: 10px;
+                &[type="text"] {
+                    flex: 0 0 48%;
+                }
+                &[type="email"] {
+                    flex: 0 0 100%;
+                    margin-bottom: 10px;
+                }
+            }
+            textarea {
+                border: 2px solid $primary;
+                padding: 10px;
+                font-size: 1rem;
+                flex: 0 0 100%;
+            }
+            button {
+                @include btn;
+                background: $primary;
+                flex: 0 0 100%;
+                border: 2px solid $primary;
+            }        
+        }
     }
 }
 

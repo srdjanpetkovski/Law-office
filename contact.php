@@ -5,17 +5,15 @@
         <article>
             <h3>Get a free no<br>obligation<br>consultation</h3>
         </article>
-        <form>
-            <div>
+        <article>
+            <form>
                 <input type="text" placeholder="First Name">
                 <input type="text" placeholder="Last Name">
-            </div>
-            <div>
                 <input type="email" placeholder="Email">
-                <textarea cols="30" rows="10"></textarea>
-                <input type="submit" placeholder="submit"></input>
-            </div>
-        </form>
+                <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                <button>Submit</button>
+            </form>
+        </article>
     </section>
 
 <?php include "partials/footer.php"; ?>
