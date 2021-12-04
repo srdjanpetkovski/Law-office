@@ -26,6 +26,8 @@
     <footer>
         <p>&copy; 2021. <a href="#">webcon.rs</a></p>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

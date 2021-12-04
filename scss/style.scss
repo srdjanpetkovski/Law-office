@@ -207,6 +207,71 @@ services
 }
 
 /***************
+about
+**************/
+.about {
+    background: $gray;
+    @include flex(space-between, center);
+    article {
+        flex: 1;
+        h2 {
+            font-size: 2.5rem;
+            color: $primary;
+            &::after {
+                @include underline($primary, 50px);
+            }
+        }
+        p, a {
+            color: $primary;
+            margin-bottom: 20px;
+        }
+    }
+    article:first-child {
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+    article:last-child {
+        background-image: linear-gradient(rgba(49, 119, 181, 0.7), rgba(49, 119, 181, 0.7)), url(../img/about.jpg);
+        @include bgImg(50vh);
+        @include flex(center, center, column);
+        h3 {
+            font-size: 3rem;
+            font-weight: 400;
+            color: $white;
+            padding: 50px;
+            border: 2px solid $white;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+/***************
+testimonials
+**************/
+.testimonials {
+    background: $tertiary;
+    padding: $padding;
+    color: $white;
+    text-align: center;
+    h2 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .owl-carousel {
+        width: 50%;
+        margin: 0 auto;
+        .item {
+            p, h3 {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+/***************
 team
 **************/
 .team {
@@ -338,40 +403,21 @@ consultation
 .consultation {
     background: $gray;
     @include flex(space-between, center);
-        article {
-            flex: 0 0 50%;
-            background-image: linear-gradient(rgba(49, 119, 181, 0.3), rgba(49, 119, 181, 0.3)), url(../img/about2.jpg);
-            @include bgImg(45vh);
-            @include flex(center, center, column);
-            h3 {
-                color: $white;
-                font-size: 2.2rem;
-                border: 2px solid $white;
-                padding: 40px;
-            }
+    article:first-child {
+        flex: 0 0 50%;
+        background-image: linear-gradient(rgba(49, 119, 181, 0.3), rgba(49, 119, 181, 0.3)), url(../img/about2.jpg);
+        @include bgImg(45vh);
+        @include flex(center, center, column);
+        h3 {
+            color: $white;
+            font-size: 2.2rem;
+            border: 2px solid $white;
+            padding: 40px;
         }
-        form {
-            flex: 0 0 40%;
-            @include flex(space-between, center);
-            div {
-                flex: 0 0 60%;
-                input:nth(1) {
-                    flex: 0 0 48%;
-                }
-                input:nth(2) {
-                    flex: 0 0 48%;
-                }
-                input:nth(3) {
-                    display: block;
-                }
-                textarea {
-                    flex: 0 0 100%;
-                }
-                button {
-                    display: block;
-                }
-            }
-        }
+    }
+    article:last-child {
+        flex: 0 0 50%;
+    }
 }
 
 /***************

@@ -9,9 +9,11 @@
             <div>
                 <input type="text" placeholder="First Name">
                 <input type="text" placeholder="Last Name">
+            </div>
+            <div>
                 <input type="email" placeholder="Email">
                 <textarea cols="30" rows="10"></textarea>
-                <input type="submit" placeholder="submit">Submit</input>
+                <input type="submit" placeholder="submit"></input>
             </div>
         </form>
     </section>
