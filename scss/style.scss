@@ -26,6 +26,9 @@ basic styles
 .container {
     width: 80%;
     margin: 0 auto;
+    @media (max-width:767px) {
+        width: 90%;
+    }
 }
 body {
     font-family: $fontFamily;
@@ -106,6 +109,9 @@ top bar
     @include flex(space-between, center);
     .logo {
         color: $primary;
+        @media (max-width:767px) {
+            margin: 0 auto 20px auto;
+        }
         span {
             font-style: italic;
             color: $secondary;
@@ -115,6 +121,9 @@ top bar
     }
     ul {
         @include flex(space-between, center);
+        @media (max-width:767px) {
+            margin: 0 auto 20px auto;
+        }
         a {
             font-size: 1.3rem;
             margin-left: 40px;
@@ -126,6 +135,9 @@ top bar
             border-radius: 50%;
             padding: 10px 15px;
             font-size: 1.3rem;
+            @media (max-width:767px) {
+                margin-left: 35px;
+            }
             &:hover {
                 transition: $transition;
                 cursor: pointer;
@@ -146,10 +158,19 @@ main Header
     padding-top: 20px;
     ul {
         @include flex(flex-end, center, row);
-        a {
-            color: $white;
-            font-size: 1.3rem;
-            margin-left: 40px;
+        li {
+            @media (max-width:767px) {
+                margin: 0 auto;
+            }
+            a {
+                color: $white;
+                font-size: 1.3rem;
+                margin-left: 40px;
+                @media (max-width:767px) {
+                    margin-left: 20px;
+                    font-size: 1.1rem;
+                }
+            }
         }
     }
     hgroup{
@@ -159,10 +180,17 @@ main Header
         margin: auto;
         width: 50%;
         text-align: center;
+        @media (max-width:767px) {
+            width: 100%;
+        }
         h1 {
             font-size: 4rem;
             font-weight: 400;
             text-transform: uppercase;
+            @media (max-width:767px) {
+                font-size: 2rem;
+                margin: 20px auto;
+            }
         }
         p {
             font-size: 1.1rem;
@@ -182,10 +210,16 @@ services
     text-align: center;
     @include flex(space-between, center);
     margin-top: -100px;
+    @media (max-width:767px) {
+        margin-top: 0;
+    }
     article {
         flex: 0 0 25%;
         color: $white;
         padding: 50px;
+        @media (max-width:767px) {
+            flex: 0 0 100%;
+        }
         i {
             font-size: 4rem;
             font-weight: 900;
@@ -240,6 +274,9 @@ about
             color: $white;
             padding: 50px;
             border: 2px solid $white;
+            @media (max-width:767px) {
+                font-size: 2rem;
+            }
             span {
                 font-weight: 700;
             }
@@ -255,6 +292,9 @@ testimonials
     padding: $padding;
     color: $white;
     text-align: center;
+    @media (max-width:767px) {
+        padding: 50px 0;
+    }
     h2 {
         font-size: 2.5rem;
         text-transform: uppercase;
@@ -284,6 +324,10 @@ team
             color: $white;
             margin-top: -100px;
             margin-bottom: 50px;
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+                margin-top: 0;
+            }
             img {
                 width: 100%;
             }
@@ -318,6 +362,9 @@ cases
     background: $primary;
     padding: $padding;
     text-align: center;
+    @media (max-width:767px) {
+        padding: 50px 0;
+    }
     h2 {
         color: $white;
         font-size: 1.4rem;
@@ -335,6 +382,13 @@ cases
             background: $white;
             margin-bottom: 20px;
             padding: 20px;
+            @media (max-width:767px) {
+                flex: 0 0 100%;
+            }
+            &:hover {
+                background: $tertiary;
+                color: $white;
+            }
             h3 {
                 color: $primary;
                 font-size: 1.2rem;
@@ -363,6 +417,10 @@ blog
             position: relative;
             div:first-child {
                 flex: 0 0 30%;
+                @media (max-width:767px) {
+                    flex: 0 0 100%;
+                    margin-bottom: 20px;
+                }
                 img {
                     width: 100%;
                 }
@@ -370,6 +428,11 @@ blog
             div:last-child {
                 flex: 0 0 40%;
                 margin-left: 20px;
+                @media (max-width:767px) {
+                    flex: 0 0 100%;
+                    margin-left: 0;
+                    margin-bottom: 20px;
+                }
                 h4 {
                     background: $primary;
                     color: $white;
@@ -390,6 +453,9 @@ blog
             background: $primary;
             width: 20%;
             padding: 20px;
+            @media (max-width:767px) {
+                display: none;
+            }
             a {
                 color: $white;
             }
@@ -409,6 +475,9 @@ consultation
         background-image: linear-gradient(rgba(49, 119, 181, 0.3), rgba(49, 119, 181, 0.3)), url(../img/about2.jpg);
         @include bgImg(60vh);
         @include flex(flex-start, center);
+        @media (max-width:767px) {
+            flex: 0 0 100%;
+        }
         h3 {
             color: $white;
             font-size: 2.2rem;
@@ -420,9 +489,16 @@ consultation
         flex: 0 0 50%;
         padding-right: 10%;
         @include flex(flex-end, center);
+        @media (max-width:767px) {
+            flex: 0 0 100%;
+        }
         form {
             width: 75%;
             @include flex(space-between, center);
+            @media (max-width:767px) {
+                width: 90%;
+                margin-bottom: 30px;
+            }
             input {
                 border: 2px solid $primary;
                 padding: 10px;
@@ -461,8 +537,12 @@ contact
     color: $primary;
     article {
         flex: 1;
+        @media (max-width:767px) {
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+        }
         h3 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             &::after {
                 @include underline($primary, 50px);
             }

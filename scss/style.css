@@ -17,6 +17,12 @@ basic styles
   margin: 0 auto;
 }
 
+@media (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -61,6 +67,12 @@ top bar
   opacity: .8;
 }
 
+@media (max-width: 767px) {
+  .topBar .logo {
+    margin: 0 auto 20px auto;
+  }
+}
+
 .topBar .logo span {
   font-style: italic;
   color: #33a5d7;
@@ -85,6 +97,12 @@ top bar
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .topBar ul {
+    margin: 0 auto 20px auto;
+  }
+}
+
 .topBar ul a {
   font-size: 1.3rem;
   margin-left: 40px;
@@ -96,6 +114,12 @@ top bar
   border-radius: 50%;
   padding: 10px 15px;
   font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .topBar ul a {
+    margin-left: 35px;
+  }
 }
 
 .topBar ul a:hover {
@@ -138,10 +162,23 @@ main Header
           flex-direction: row;
 }
 
-.mainHeader ul a {
+@media (max-width: 767px) {
+  .mainHeader ul li {
+    margin: 0 auto;
+  }
+}
+
+.mainHeader ul li a {
   color: #fff;
   font-size: 1.3rem;
   margin-left: 40px;
+}
+
+@media (max-width: 767px) {
+  .mainHeader ul li a {
+    margin-left: 20px;
+    font-size: 1.1rem;
+  }
 }
 
 .mainHeader hgroup {
@@ -166,10 +203,23 @@ main Header
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .mainHeader hgroup {
+    width: 100%;
+  }
+}
+
 .mainHeader hgroup h1 {
   font-size: 4rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .mainHeader hgroup h1 {
+    font-size: 2rem;
+    margin: 20px auto;
+  }
 }
 
 .mainHeader hgroup p {
@@ -220,12 +270,26 @@ services
   margin-top: -100px;
 }
 
+@media (max-width: 767px) {
+  .services {
+    margin-top: 0;
+  }
+}
+
 .services article {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%;
   color: #fff;
   padding: 50px;
+}
+
+@media (max-width: 767px) {
+  .services article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 .services article i {
@@ -348,6 +412,12 @@ about
   border: 2px solid #fff;
 }
 
+@media (max-width: 767px) {
+  .about article:last-child h3 {
+    font-size: 2rem;
+  }
+}
+
 .about article:last-child h3 span {
   font-weight: 700;
 }
@@ -360,6 +430,12 @@ testimonials
   padding: 100px 0;
   color: #fff;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .testimonials {
+    padding: 50px 0;
+  }
 }
 
 .testimonials h2 {
@@ -410,6 +486,15 @@ team
   color: #fff;
   margin-top: -100px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .team .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-top: 0;
+  }
 }
 
 .team .container article img {
@@ -485,6 +570,12 @@ cases
   text-align: center;
 }
 
+@media (max-width: 767px) {
+  .cases {
+    padding: 50px 0;
+  }
+}
+
 .cases h2 {
   color: #fff;
   font-size: 1.4rem;
@@ -522,6 +613,19 @@ cases
   background: #fff;
   margin-bottom: 20px;
   padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .cases .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
+.cases .container article:hover {
+  background: #080033;
+  color: #fff;
 }
 
 .cases .container article h3 {
@@ -577,6 +681,15 @@ blog
           flex: 0 0 30%;
 }
 
+@media (max-width: 767px) {
+  .blog .container article div:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .blog .container article div:first-child img {
   width: 100%;
 }
@@ -586,6 +699,16 @@ blog
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
   margin-left: 20px;
+}
+
+@media (max-width: 767px) {
+  .blog .container article div:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .blog .container article div:last-child h4 {
@@ -608,6 +731,12 @@ blog
   background: #3177b5;
   width: 20%;
   padding: 20px;
+}
+
+@media (max-width: 767px) {
+  .blog .container aside {
+    display: none;
+  }
 }
 
 .blog .container aside a {
@@ -663,6 +792,14 @@ consultation
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .consultation article:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .consultation article:first-child h3 {
   color: #fff;
   font-size: 2.2rem;
@@ -692,6 +829,14 @@ consultation
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .consultation article:last-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+
 .consultation article:last-child form {
   width: 75%;
   display: -webkit-box;
@@ -709,6 +854,13 @@ consultation
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .consultation article:last-child form {
+    width: 90%;
+    margin-bottom: 30px;
+  }
 }
 
 .consultation article:last-child form input {
@@ -793,8 +945,17 @@ contact
           flex: 1;
 }
 
+@media (max-width: 767px) {
+  .contact article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .contact article h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .contact article h3::after {
